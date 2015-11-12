@@ -1,0 +1,17 @@
+{
+  "name": "unit-tests",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A testbed for unit testing Node",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/"
+  },
+  "author": "Jordan Kasper",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.2"
+  }
+}
