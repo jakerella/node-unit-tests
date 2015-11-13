@@ -1,7 +1,7 @@
 var http = require( 'http' ),
     url = require( 'url' );
 
-function requestHandler( req, res ) {
+var server = http.createServer( function requestHandler( req, res ) {
     if ( url.parse(req.url).pathname !== '/' ) {
         res.writeHead( 404, 'Not Found' );
         res.end( 'Not Found' );
@@ -12,11 +12,7 @@ function requestHandler( req, res ) {
         'Content-Type': 'text/html'
     } );
     res.end( '<h1>Hello World!</h1>' );
-}
-
-
-var server = http.createServer( requestHandler );
-server.requestHandler = requestHandler;
+} );
 
 
 if (require.main === module) {
