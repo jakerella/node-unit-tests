@@ -9,14 +9,17 @@ describe('text module with mock', function() {
     var i18nOriginal;
     
     beforeEach(function() {
-        i18nOriginal = require.cache[require.resolve('../app/i18n')].exports;
-        require.cache[require.resolve('../app/i18n')].exports = function() {
+        i18nOriginal = require.cache[ require.resolve('../app/i18n') ].exports;
+        
+        require.cache[ require.resolve('../app/i18n') ].exports = function() {
             return 'foo'
         };
     });
 
     afterEach(function() {
-        require.cache[require.resolve('../app/i18n')].exports = i18nOriginal;
+        
+        require.cache[ require.resolve('../app/i18n') ].exports = i18nOriginal;
+        
     });
     
     

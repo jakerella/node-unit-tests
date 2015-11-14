@@ -17,7 +17,7 @@ var server = http.createServer( function requestHandler( req, res ) {
 
 if (require.main === module) {
     
-    server.listen( 3001, function() {
+    server.listen( 3000, function() {
         console.log( 'The server is up!' );
     } );
     
