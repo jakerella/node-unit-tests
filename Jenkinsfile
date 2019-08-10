@@ -9,7 +9,7 @@ pipeline{
             steps {
                 script {
                     node {
-                        println "mi primer pipeline Build"
+                        println "mi primer pipeline build"
                         echo "Nombre de Usuario ${myUsername}"
                     }
                 }
