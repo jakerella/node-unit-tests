@@ -13,6 +13,6 @@
     "chai": "^3.4.1",
     "mocha": "^2.3.3",
     "sinon": "^1.17.2",
-    "superagent": "^1.4.0"
+    "superagent": "^5.1.0"
   }
 }
